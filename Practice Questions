@@ -1,5 +1,6 @@
-# Questions From [sqlbolt](https://sqlbolt.com)
-# Lesson 1 : Select Queries 101
+Questions From sqlbolt(https://sqlbolt.com)
+
+Lesson 1 : Select Queries 101
 ```
 1. Find the title of each film
 ```
@@ -20,4 +21,26 @@ SELECT title, year FROM movies;
 5. Find all the information about each film
 ```
 SELECT * FROM movies;
+```
+Lesson 2 : Queries with constraints
+```
+1.Find the movie with a row id of 6
+```
+SELECT * FROM movies
+WHERE id is 6;
+```
+2.Find the movies released in the years between 2000 and 2010
+```
+SELECT * FROM movies
+WHERE year BETWEEN 2000 and 2010;
+```
+3.Find the movies not released in the years between 2000 and 2010
+```
+SELECT * FROM movies
+WHERE year not BETWEEN 2000 and 2010;
+```
+4.Find the first 5 Pixar movies and their release year
+```
+SELECT title,year FROM movies
+limit 5;
 ```
